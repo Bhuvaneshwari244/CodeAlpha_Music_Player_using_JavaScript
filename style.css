@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #1e1e1e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.player-container {
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.song-info h3, .song-info p {
+    margin: 5px 0;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    color: #1db954;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+#progress {
+    width: 100%;
+    margin: 0 5px;
+}
+
+.volume-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.volume-container input {
+    margin-left: 10px;
+}
+
+.playlist ul {
+    list-style: none;
+    padding: 0;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+.playlist li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.playlist li:hover, .playlist li.active {
+    background: #1db954;
+    color: #fff;
+}
+
+/* Accessibility: screen-reader only labels (not used now, but optional) */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
